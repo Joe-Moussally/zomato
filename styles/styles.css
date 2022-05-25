@@ -232,3 +232,15 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+/*MEDIA QUERY FOR LOGIN AND SIGNUP*/
+@media screen and (max-width: 877px){
+    #main-container-signup img, #main-container-login img {
+        display: none;
+    }
+    #main-container-signup form, #main-container-login form {
+        border-radius: 20px;
+    }
+    #login-container {
+        width: 100%;
+    }
+}
