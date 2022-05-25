@@ -28,7 +28,7 @@ i {
 /*------------------------------------------------------------------*/
 #main-container-login {
     background: rgb(255,0,0);
-    background: linear-gradient(200deg, rgb(255, 96, 96) 0%, rgba(157,0,255,1) 100%);
+    background: linear-gradient(200deg, rgb(53, 107, 255) 0%, rgb(255, 0, 225) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
