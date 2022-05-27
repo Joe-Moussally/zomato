@@ -208,7 +208,7 @@ input:focus {
     display: none;
 } */
 
-img {
+#main-container-login img, #main-container-signup img {
     transform: translateY(24.8px);
     height: 600px;
     width: 400px;
@@ -285,4 +285,27 @@ img {
     #home-header h1 {
         font-size: 40px;
     }
+}
+
+/*near you section*/
+#near-you-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#near-you-list li {
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#near-you-list img {
+    object-fit: cover;
+    width: 400px;
 }
