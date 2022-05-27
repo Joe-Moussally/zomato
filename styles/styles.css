@@ -527,3 +527,38 @@ input:focus {
     transform: scale(1.05);
     transition: .1s;
 }
+
+/*----------------------------RESTAURANT PAGE---------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+#restaurant-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+}
+
+#restaurant-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#restaurant-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#restaurant-header img {
+    width: 400px;
+}
+
+#restaurant-description {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
