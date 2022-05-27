@@ -12,12 +12,14 @@
     --light2: rgb(255, 114, 164);
 }
 
-body {
+#login-body, #signup-body {
     
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    height: 100vh;
+    height: 100%;
+    background: rgb(255,0,0);
+    background: linear-gradient(200deg, rgb(53, 107, 255) 0%, rgb(255, 0, 225) 100%);
 }
 
 i {
@@ -27,8 +29,7 @@ i {
 /*----------------------------LOGIN/SIGNUP PAGE----------------------------*/
 /*-------------------------------------------------------------------------*/
 #main-container-login {
-    background: rgb(255,0,0);
-    background: linear-gradient(200deg, rgb(53, 107, 255) 0%, rgb(255, 0, 225) 100%);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,8 +249,3 @@ img {
 
 /*----------------------------HOME PAGE------------------------------------*/
 /*-------------------------------------------------------------------------*/
-
-#home-header {
-    height: 250px;
-    background-color: red;
-}
