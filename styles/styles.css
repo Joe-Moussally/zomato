@@ -14,9 +14,9 @@
 
 body {
     
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 100vh;
 }
 
@@ -246,5 +246,10 @@ img {
 }
 
 
-/*----------------------------HOME PAGE----------------------------*/
+/*----------------------------HOME PAGE------------------------------------*/
 /*-------------------------------------------------------------------------*/
+
+#home-header {
+    height: 250px;
+    background-color: red;
+}
