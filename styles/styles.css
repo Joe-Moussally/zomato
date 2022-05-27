@@ -404,7 +404,7 @@ input:focus {
     align-items: center;
 }
 
-#near-you h1 {
+/* #near-you h1*/.section-title { 
     font-size: 32px;
     margin-right: auto;
     margin-left: 6.5%;
@@ -415,4 +415,42 @@ input:focus {
 
 #near-you h1>strong {
     color: rgb(57, 57, 57);
+}
+
+/*rate*/
+.rate {
+    background-color: lime;
+    width: 10px;
+    height: 10px;
+}
+
+.fa-star {
+    color: red !important;
+}
+
+.fa-location-dot {
+    margin-left: 20px;
+}
+
+/*other locations section*/
+#other-locations-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#other-locations-container ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));
+    list-style: none;
+    justify-items: center;
+    width: 90%;
+}
+
+#other-locations-container li {
+    width: 230px;
+    height: 75px;
+    border: 1px black solid;
 }
