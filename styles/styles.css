@@ -295,7 +295,7 @@ input:focus {
 }
 
 #home-header-logo-container img {
-    width: 100%;
+    width: 1000px;
     height: 100%;
 }
 
@@ -322,6 +322,10 @@ input:focus {
 
 /*header media query*/
 @media screen and (max-width: 980px){
+    #home-header-logo-container img {
+        width: 100%;
+    }
+
     #home-header-logo-container {
         width: 70%;
     }
@@ -330,7 +334,7 @@ input:focus {
     }
     #home-header h1 {
         font-size: 40px;
-        transform: translateY(-20px);
+        transform: translateY(-0px);
     }
 }
 
