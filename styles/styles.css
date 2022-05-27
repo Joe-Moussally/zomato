@@ -292,6 +292,7 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(410px, 1fr));
     list-style: none;
+    justify-items: center;
 }
 
 #near-you-list li {
@@ -302,6 +303,13 @@ input:focus {
     display: flex;
     flex-direction: column;
     margin: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#near-you-list li:hover {
+    transform: scale(1.1);
+    transition: .2s;
 }
 
 #near-you-list img {
@@ -335,4 +343,9 @@ input:focus {
 
 #near-you-list p {
     margin: 0 5px;
+}
+
+#near-you h1 {
+    font-size: 50px;
+    margin: 30px 0 30px 30px;
 }
