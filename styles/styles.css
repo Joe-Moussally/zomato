@@ -246,6 +246,8 @@ img {
 /*-------------------------------------------------------------------------*/
 
 #home-header {
-    background-color: red;
-
+    background-image: url('../draft/assets/wallpaper\ header\ 2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
 }
