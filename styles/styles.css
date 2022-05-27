@@ -246,7 +246,7 @@ img {
 /*-------------------------------------------------------------------------*/
 
 #home-header {
-    background-image: url('../draft/assets/wallpaper\ header\ 2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../draft/assets/wallpaper\ header\ 2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
