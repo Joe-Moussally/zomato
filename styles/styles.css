@@ -48,7 +48,6 @@ i {
 
 #login-container {
     display: flex;
-    flex-direction: column;
     /* height: 100vh; */
     align-items: center;
 }
@@ -74,11 +73,17 @@ form {
     justify-content: space-around;
     background: rgb(255, 255, 255);
     border-radius: 20px;
-    background: linear-gradient(333deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.8) 34%, rgba(255,255,255,0.2) 68%, rgba(255,255,255,0.1) 100%);
-    width: 60%;
+    background: linear-gradient(333deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.5) 34%, rgba(255,255,255,0.2) 68%, rgba(255,255,255,0.1) 100%);
+    width: 468px;
     min-width: 467px;
     height: 600px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 100px 0px;
+}
+
+#login-space {
+    width: 200px;
+    height: 200px;
+    background-color: red;
 }
 
 /*login label*/
@@ -268,7 +273,7 @@ input:focus {
 /*-------------------------------------------------------------------------*/
 
 #home-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../draft/assets/wallpaper\ header\ 2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../draft/assets/brooke-lark-o2ul302zP-o-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 630px;
@@ -282,6 +287,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     width: 40%;
+    margin-top: 100px;
 }
 
 #home-header-logo-container img {
@@ -293,7 +299,7 @@ input:focus {
     color: white;
     font-size: 60px;
     text-align: center;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
 }
 
 #header-search {
@@ -313,7 +319,7 @@ input:focus {
 /*header media query*/
 @media screen and (max-width: 980px){
     #home-header-logo-container {
-        width: 60%;
+        width: 70%;
     }
     #home-header {
         height: 600px;
