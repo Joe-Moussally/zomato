@@ -340,18 +340,19 @@ input:focus {
 #near-you-list {
     display: flex;
     justify-content: center;
+    width: 85%;
 }
 #near-you-list ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(410px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(310px, 1fr));
     list-style: none;
     justify-items: center;
-    width: 95%;
+    width: 100%;
 }
 
 #near-you-list li {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 410px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
     display: flex;
@@ -374,7 +375,7 @@ input:focus {
 }
 
 #card-body {
-    margin: 5px;
+    margin: 12px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -396,12 +397,17 @@ input:focus {
     margin-right: 5px;
 }
 
-#near-you-list p {
-    margin: 0 5px;
+#near-you {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #near-you h1 {
     font-size: 32px;
+    margin-right: auto;
+    margin-left: 6.5%;
     padding: 60px 0 30px 30px;
     font-weight: 500;
     color: rgb(91, 91, 91);
