@@ -272,6 +272,10 @@ input:focus {
 /*----------------------------HOME PAGE------------------------------------*/
 /*-------------------------------------------------------------------------*/
 
+#home-body {
+    background-color: rgb(244, 244, 244);
+}
+
 #home-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../draft/assets/brooke-lark-o2ul302zP-o-unsplash.jpg');
     background-repeat: no-repeat;
@@ -355,12 +359,13 @@ input:focus {
     height: 410px;
     border-radius: 20px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.319); */
-    border: .5px black solid;
+    border: .5px rgba(0, 0, 0, 0.226) solid;
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
     cursor: pointer;
     transition: .2s;
+    background-color: white;
 }
 
 #near-you-list li:hover {
@@ -372,10 +377,11 @@ input:focus {
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.684);
+    border-bottom: 1px rgba(0, 0, 0, 0.226) solid;
 }
 
 #card-body {
+    
     margin: 12px;
     display: flex;
     flex-direction: column;
@@ -406,7 +412,7 @@ input:focus {
 }
 
 /* #near-you h1*/.section-title { 
-    font-size: 32px;
+    font-size: 43px;
     margin-right: auto;
     margin-left: 6.5%;
     padding: 60px 0 30px 30px;
@@ -461,9 +467,10 @@ input:focus {
     height: 75px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.719);
-    border: 1px rgba(0, 0, 0, 0.345) solid;
+    border: .5px rgba(0, 0, 0, 0.316) solid;
     margin: 10px 0;
     transition: .1s;
+    background-color: white;
 }
 
 #other-locations-container li:hover {
@@ -505,9 +512,10 @@ input:focus {
     height: 75px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.719);
-    border: 1px rgba(0, 0, 0, 0.345) solid;
+    border: .5px rgba(0, 0, 0, 0.316) solid;
     margin: 10px 0;
     transition: .1s;
+    background-color: white;
 }
 
 #cuisines li:hover {
