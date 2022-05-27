@@ -443,14 +443,36 @@ input:focus {
 
 #other-locations-container ul{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
     list-style: none;
     justify-items: center;
-    width: 90%;
+    width: 85%;
 }
 
 #other-locations-container li {
+    font-size: 21px;
+    border-radius: 4px;
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 230px;
     height: 75px;
-    border: 1px black solid;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.719);
+    border: 1px rgba(0, 0, 0, 0.345) solid;
+    margin: 10px 0;
+    transition: .1s;
+}
+
+#other-locations-container li:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .1s;
+}
+
+#other-locations-container i {
+    color: gray;
+    text-decoration: underline;
+    font-size: 17px;
 }
