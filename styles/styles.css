@@ -548,10 +548,12 @@ input:focus {
 }
 
 #restaurant-container {
+    background-color: white;
+    padding: 0 20px;
     width: 80%;
     display: flex;
     flex-direction: column;
-
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.159);
 }
 
 #restaurant-header {
@@ -600,8 +602,49 @@ input:focus {
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 400;
+    color: rgb(211, 0, 0);
 }
 
+/*reviews sections*/
+#reviews ul{
+    list-style: none;
+}
+
+#reviews li {
+    padding: 10px;
+    border: .5px rgba(0, 0, 0, 0.301) solid;
+    border-radius: 5px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-header span {
+    display: flex;
+    align-items: center;
+}
+
+.review-header i {
+    margin-left: 5px;
+}
+
+.review-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.review-header-left img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*media query for restaurant page*/ 
 @media screen and (max-width: 988px) {
     #restaurant-description {
         width: 80%;
