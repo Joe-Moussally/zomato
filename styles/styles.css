@@ -691,4 +691,10 @@ input:focus {
         width: 80%;
         text-align: center;
     }
+    #restaurant-cuisines ul {
+        justify-content: center;
+    }
+    #restaurant-cuisines {
+        width: 100%;
+    }
 }
