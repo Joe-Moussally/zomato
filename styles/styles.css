@@ -899,5 +899,30 @@ input:focus {
 
 #create-cuisines {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#create-cuisines input {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 0;
+    transform: translateY(1px) scale(1.4);
+    margin-right: 10px;
+}
+
+#create-cuisines input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#create-cuisines div {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+#create-cuisine-section {
+    width: 50%;
+    border: 2px red solid;
 }
