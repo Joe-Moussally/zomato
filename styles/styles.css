@@ -720,13 +720,25 @@ input:focus {
 #admin-container {
     padding: 40px;
     border: 2px red solid;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.159);
     display: flex;
     justify-content: center;
     width: 85%;
 }
 
 #admin-header {
-    border: 2px red solid;
+    color: white;
     height: 230px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.7)), url('../draft/assets/admin/coffee 1.jpg');
+    background-size: cover;
+}
+
+#admin-header h1 {
+    font-size: 60px;
 }
