@@ -709,3 +709,17 @@ input:focus {
         width: 100%;
     }
 }
+
+/*----------------------------ADMIN PAGE-----------------------------------*/
+/*-------------------------------------------------------------------------*/
+#admin-body {
+    display: flex;
+    justify-content: center;
+}
+
+#admin-container {
+    border: 2px red solid;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
