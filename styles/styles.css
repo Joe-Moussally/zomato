@@ -836,3 +836,62 @@ input:focus {
 #create-header h1 {
     font-size: 60px;
 }
+
+#create-form-container {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.form-section {
+    width: 100%;
+    font-size: 22px;
+}
+
+.form-section h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.form-section > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section input {
+    border: 2px rgba(220, 20, 60, 0.536) solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 30px;
+    font-size: 21px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.form-section input:focus {
+    outline: 3px rgba(220, 20, 60, 0.218) solid;
+}
+
+.form-section input::placeholder {
+    color: gray;
+    font-size: 21px;
+}
+
+.form-section textarea {
+    /*fixed width for textarea*/
+    max-width: 400px;
+    min-width: 400px;
+    border: 2px rgba(220, 20, 60, 0.536) solid;
+    border-radius: 3px;
+    font-size: 21px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.form-section textarea:focus {
+    outline: 3px rgba(220, 20, 60, 0.218) solid;
+}
+
+.form-section textarea::placeholder {
+    color: gray;
+    font-size: 21px;
+}
