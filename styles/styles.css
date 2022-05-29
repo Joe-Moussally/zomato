@@ -817,6 +817,7 @@ input:focus {
     align-items: center;
     flex-direction: column;
     width: 85%;
+    height: fit-content;
 }
 
 #create-header {
@@ -894,4 +895,9 @@ input:focus {
 .form-section textarea::placeholder {
     color: gray;
     font-size: 21px;
+}
+
+#create-cuisines {
+    display: flex;
+    flex-direction: column;
 }
