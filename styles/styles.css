@@ -817,6 +817,7 @@ input:focus {
     align-items: center;
     flex-direction: column;
     width: 85%;
+    min-width: 500px;
     height: fit-content;
 }
 
@@ -841,14 +842,25 @@ input:focus {
 #create-form-container {
     width: 100%;
     margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#create-form-container div:nth-child(1) {
+    margin-right: 20px;
 }
 
 .form-section {
-    width: 100%;
+    width: fit-content;
     font-size: 22px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-section h2 {
+    color: rgba(0, 0, 0, 0.723);
     margin-bottom: 10px;
     font-size: 30px;
 }
@@ -924,5 +936,4 @@ input:focus {
 
 #create-cuisine-section {
     width: 50%;
-    border: 2px red solid;
 }
