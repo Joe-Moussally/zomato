@@ -796,3 +796,39 @@ input:focus {
     font-weight: 500;
     color: rgb(46, 46, 46);
 }
+
+/*----------------------------ADD PAGE-------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+#create-body {
+    display: flex;
+    justify-content: center;
+    background-image: url('../draft/assets/admin/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#create-container {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+}
+
+#create-header {
+    color: white;
+    height: 230px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../draft/assets/admin/marshmallow.jpg');
+    background-size: cover;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
