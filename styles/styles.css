@@ -987,6 +987,7 @@ input:focus {
 }
 
 #see-reviews-body h1 {
+    margin-top: 30px;
     font-size: 42px;
     color: rgb(67, 67, 67);
     text-align: center;
@@ -1014,7 +1015,7 @@ input:focus {
 #see-reviews-body li {
     padding: 10px;
     border-radius: 5px;
-    margin: 40px 0;
+    margin: 20px;
     padding-bottom: 10px;
     border: .5px rgba(128, 128, 128, 0.37) solid;
     width: 400px;
