@@ -952,3 +952,23 @@ input:focus {
     outline: none;
     box-shadow: none;
 }
+
+#form-restaurant-photo input{
+    border: none;
+}
+
+#create-restaurant-btn {
+    border: none;
+    width: 260px;
+    height: 60px;
+    border-radius: 6px;
+    transition: .2s;
+    background-color: rgba(255, 47, 75, 0.427);
+    font-size: 21px;
+}
+
+#create-restaurant-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
+}
