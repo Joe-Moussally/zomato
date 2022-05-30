@@ -937,3 +937,18 @@ input:focus {
 #create-cuisine-section {
     width: 50%;
 }
+
+.form-section select {
+    border: 2px rgba(220, 20, 60, 0.536) solid;
+    border-radius: 3px;
+    width: 400px;
+    height: 30px;
+    font-size: 21px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.form-section select:focus {
+    outline: none;
+    box-shadow: none;
+}
