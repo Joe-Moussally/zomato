@@ -988,23 +988,32 @@ input:focus {
     color: rgb(67, 67, 67);
 }
 
+#see-reviews-container {
+    background-color: white;
+}
+
 #see-reviews-body ul {
     padding: 20px;
     list-style: none;
     max-width: 100%;
     margin: 0 auto;
-    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #see-reviews-body li {
+    padding: 10px;
+    border-radius: 5px;
     margin: 40px 0;
     padding-bottom: 10px;
-    border-bottom: .5px rgba(128, 128, 128, 0.37) solid;
+    border: .5px rgba(128, 128, 128, 0.37) solid;
+    width: 400px;
 }
 
 .accept-reject {
     margin: 20px;
-    width: 300px;
+    width: 335px;
     display: flex;
     justify-content: space-evenly;
 }
