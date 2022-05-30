@@ -618,18 +618,18 @@ input:focus {
 }
 
 /*reviews sections*/
-#reviews {
+.reviews-container {
     margin: 0 auto;
 }
 
-#reviews ul{
+.reviews-container ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#reviews li {
+.reviews-container li {
     max-width: 700px;
     padding: 10px;
     border-bottom: .5px rgba(0, 0, 0, 0.301) solid;
@@ -844,7 +844,7 @@ input:focus {
     margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #create-form-container div:nth-child(1) {
@@ -971,4 +971,59 @@ input:focus {
     cursor: pointer;
     transform: scale(1.05);
     transition: .2s;
+}
+
+/*----------------------------SEE ALL REVIEWS PAGE-----------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+#see-reviews-body {
+    padding: 0 5%;
+    background-color: rgba(128, 128, 128, 0.132);
+}
+
+#see-reviews-body ul {
+    padding: 20px;
+    list-style: none;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#see-reviews-body li {
+    margin: 40px 0;
+    padding-bottom: 10px;
+    border-bottom: .5px rgba(128, 128, 128, 0.37) solid;
+}
+
+.accept-reject {
+    margin: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.accept,.reject {
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.accept:hover,.reject:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.accept {
+    background-color: rgb(0, 238, 0);
+    color: rgb(0, 90, 0);
+}
+
+.reject {
+    background-color: rgb(238, 0, 36);
+    color: rgb(90, 0, 0);
 }
