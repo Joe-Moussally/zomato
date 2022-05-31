@@ -4,12 +4,12 @@ const comments = document.getElementById("comments");
     
 
         let data = {
-            users: users.value,
-            restaurants : restaurants.value,
-            comments :comments.value,
+            users: users.textContent,
+            restaurants : restaurants.textContent,
+            comments :comments.textContent,
         }
-
-        let url = 'http://foodity/backend/backend/statistics.php';
+        debugger;
+        let url = './foodity/backend/statistics.php';
         axios({
             method: 'GET',
             url: url,

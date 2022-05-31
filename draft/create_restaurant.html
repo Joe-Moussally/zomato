@@ -8,16 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Add Restaurant</title>
 </head>
-
 <body id="create-body">
-    
     <form action="restaurantpic.php" method="post" enctype="multipart/form-data">
-        
     <div id="create-container">
 
-
         <div id="create-header">
-            
             <h1>Create New Restaurant</h1>
         </div>
 
@@ -25,14 +20,14 @@
 
             <div class="form-section" id="form-restaurant-photo">
                 <h2><label for="img">Choose photo</label></h2>
-                <input type="file" name="file">
+                <input type="file" name="file" id="image">
             </div>
             
             <div class="form-section">
                 <h2>Name and Description</h2>
                 <div>
                     <input type="text" id="name" placeholder="Name">
-                    <textarea name="description"cols="30" rows="5" placeholder="Description"></textarea>
+                    <textarea name="description"cols="30" id="description" rows="5" placeholder="Description"></textarea>
                 </div>
             </div>
 

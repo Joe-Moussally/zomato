@@ -2,7 +2,7 @@ document.getElementById("create-restaurant-btn").addEventListener("click", funct
     event.preventDefault();
     const name = document.getElementById("name").value;
     const description = document.getElementById("description").value;
-    const icon = document.getElementById("icon").value;
+    const icon = document.getElementById("image").files[0];
     const phone = document.getElementById("phone").value;
     const location = document.getElementById("location").value;
     const style = document.getElementsByClassName('messageCheckbox')
@@ -13,27 +13,24 @@ document.getElementById("create-restaurant-btn").addEventListener("click", funct
        cuisines.push(element.value)
     });
 
-    let data = {
-        name,
-        description,
-        icon,
-        email,
-        phone,
-        location,
-        cuisines
-    }
-    
-    let url = './backend/backend/add.php';
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('description', description);
+    formData.append('icon', icon);
+    formData.append('phone', phone);
+    formData.append('location', location);
+    formData.append('cuisines', cuisines);
+
     axios({
         method: 'POST',
-        url: url,
-        params: data
-    })
-        .then(function (response) {
-            
-            if (response.data === 'ok') {
-                window.location.href = "./draft/home.html";
+        url: '/foodity/backend/add.php',
+        data: formData,
+        config: {
+            headers: {
+                'Content-Type': 'multipart/form-data'
             }
-        });
-
+        }
+    }).then((response) => {
+        alert(response.data);
+    })
 });
