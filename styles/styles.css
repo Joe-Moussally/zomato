@@ -622,6 +622,25 @@ input:focus {
     color: rgb(211, 0, 0);
 }
 
+/* input review section */
+#review-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#review-input-container button {
+    border: none;
+}
+
+#review-input-container textarea {
+    width: 100%;
+}
+
+#review-input-container textarea::placeholder {
+    font-size: 28px;
+}
+
 /*reviews sections*/
 .reviews-container {
     margin: 0 auto;
