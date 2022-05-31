@@ -8,7 +8,8 @@ const comments = document.getElementById("comments");
             restaurants : restaurants.textContent,
             comments :comments.textContent,
         }
-        let url = '/zomato/backend/statistics.php';
+        debugger;
+        let url = './foodity/backend/statistics.php';
         axios({
             method: 'GET',
             url: url,
