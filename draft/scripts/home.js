@@ -31,6 +31,7 @@ let searchbar = document.getElementById('header-search')
 searchbar.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         let name = searchbar.value;
-        
+        localStorage.setItem('home-seach',name)
+        window.location.replace("http://foodity/draft/search_result.html");
     }
 });

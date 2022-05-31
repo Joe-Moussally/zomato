@@ -1274,6 +1274,14 @@ input:focus {
 
 #result-container li {
     width: 100%;
+    border-bottom: 1px rgba(128, 128, 128, 0.396) solid;
+    transition: .2s;
+}
+
+#result-container li:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .2s;
 }
 
 #result-container p {
