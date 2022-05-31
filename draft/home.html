@@ -5,16 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Home</title>
 </head>
 
 <header id="home-header">
-    <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-    </div>
     <div id="home-header-logo-container">
         <img src="./assets/draft logo/LOGO WHITE.png" alt="FOODITY">
     </div>
@@ -32,7 +27,7 @@
             <ul>
 
 
-                <li>
+                <li onclick="redirect(event.currentTarget)">
                     <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/02/mcdonalds-logo.jpg?quality=82&strip=1">
                     
                     <div class="card-body">
@@ -47,82 +42,6 @@
                     </div>
                 </li>
 
-                <li>
-                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/02/mcdonalds-logo.jpg?quality=82&strip=1">
-                    
-                    <div class="card-body">
-                        <div class="card-header"><h2>McDonald's</h2><span><i class="fa-solid fa-star"></i>4</span></div>
-                        <div class="card-body-cuisines">
-                            <ul>
-                                <li>Mexican</li>
-                                <li>Greek</li>
-                            </ul>
-                        </div>
-                        <span><i class="fa-solid fa-location-dot"></i>Beirut</span>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/02/mcdonalds-logo.jpg?quality=82&strip=1">
-                    
-                    <div class="card-body">
-                        <div class="card-header"><h2>McDonald's</h2><span><i class="fa-solid fa-star"></i>4</span></div>
-                        <div class="card-body-cuisines">
-                            <ul>
-                                <li>Mexican</li>
-                                <li>Greek</li>
-                            </ul>
-                        </div>
-                        <span><i class="fa-solid fa-location-dot"></i>Beirut</span>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/02/mcdonalds-logo.jpg?quality=82&strip=1">
-                    
-                    <div class="card-body">
-                        <div class="card-header"><h2>McDonald's</h2><span><i class="fa-solid fa-star"></i>4</span></div>
-                        <div class="card-body-cuisines">
-                            <ul>
-                                <li>Mexican</li>
-                                <li>Greek</li>
-                            </ul>
-                        </div>
-                        <span><i class="fa-solid fa-location-dot"></i>Beirut</span>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/02/mcdonalds-logo.jpg?quality=82&strip=1">
-                    
-                    <div class="card-body">
-                        <div class="card-header"><h2>McDonald's</h2><span><i class="fa-solid fa-star"></i>4</span></div>
-                        <div class="card-body-cuisines">
-                            <ul>
-                                <li>Mexican</li>
-                                <li>Greek</li>
-                            </ul>
-                        </div>
-                        <span><i class="fa-solid fa-location-dot"></i>Beirut</span>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2021/02/mcdonalds-logo.jpg?quality=82&strip=1">
-                    
-                    <div class="card-body">
-                        <div class="card-header"><h2>McDonald's</h2><span><i class="fa-solid fa-star"></i>4</span></div>
-                        <div class="card-body-cuisines">
-                            <ul>
-                                <li>Mexican</li>
-                                <li>Greek</li>
-                            </ul>
-                        </div>
-                        <span><i class="fa-solid fa-location-dot"></i>Beirut</span>
-                    </div>
-                </li>
-
-                
             </ul>
         </div>
 
@@ -174,3 +93,5 @@
 
 <!--Font awsome-->
 <script src="https://kit.fontawesome.com/559b0c66a2.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./scripts/home.js"></script>

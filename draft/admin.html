@@ -16,18 +16,25 @@
             </div>
 
             <div id="admin-buttons-container">
+            <a href="create_restaurant.html" style="text-decoration:none">
                 <button><i class="fa-solid fa-utensils"></i><span>Create New Restaurant</span></button>
+             </a>
+            <a href="see_reviews.html" style="text-decoration:none">
                 <button><i class="fa-solid fa-comments"></i><span>See Pending Reviews</span></button>
+            </a>
             </div>
 
             <div id="admin-stats">
                 <h2>Statistics</h2>
-                <span>Users count: 143</span>
-                <span>Restaurants Count: 39</span>
-                <span>Reviews count: 72</span>
+                <span>Users count:<span id="users">0</span> </span>
+                <span >Restaurants Count:<span id="restaurants">0</span> </span>
+                <span >comment scount:<span id="comments">0</span></span>
+                </span>
             </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="scripts/admin.js"></script>
 </body>
 </html>
 

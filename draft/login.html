@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Login</title>
 </head>
 <body id="login-body">
@@ -14,18 +16,18 @@
             
             <form>
 
-                <div class="login-logo"><img src="./assets/draft logo/LOGO 2.png"><img src="./assets/draft logo/LOGO RED.png" alt="FOODITY"></div>
+                <div id="login-logo"><img src="./assets/draft logo/LOGO 2.png"><img src="./assets/draft logo/LOGO RED.png" alt="FOODITY"></div>
 
                 <!--Username input-->
                 <div class="input-container">
                     <div class="input-icon"><i class="fa-solid fa-at"></i></div>
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email">
                 </div>
 
                 <!--Password input-->
                 <div class="input-container" id="password-login-input" >
                     <div class="input-icon"><i class="fa-solid fa-lock" style="color: white;"></i></div>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" id="password" name="password" placeholder="Password">
                 </div>
 
                 <button type="submit" id="login-btn">LOGIN</button>
@@ -51,8 +53,9 @@
 
     </div>
     
-
+    <script src="scripts/login.js"></script>
 </body>
+
 </html>
 
 <!--Font awsome-->

@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Sign Up</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body id="signup-body">
 
     <div id="main-container-signup">
 
         <div id="login-container">
-            
-
+            <div id="profile-logo"><i class="fa-solid fa-signature"></i></div>
             <form>
-
-            <div class="login-logo"><img src="./assets/draft logo/LOGO 2.png"><img src="./assets/draft logo/LOGO RED.png" alt="FOODITY"></div>
-
 
                 <!-- Username input
                 <div class="input-container name-input-container">
@@ -31,28 +28,28 @@
                 <!--Username input-->
                 <div class="input-container">
                     <div class="input-icon"><i class="fa-solid fa-user"></i></div>
-                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="text" id="username" placeholder="Username" required>
                 </div>
 
                 <!--Email input-->
                 <div class="input-container">
                     <div class="input-icon"><i class="fa-solid fa-at"></i></div>
-                    <input type="email" required name="username" placeholder="Email">
+                    <input type="email" required id="email" placeholder="Email">
                 </div>
 
                 <!--Password input-->
                 <div class="input-container">
                     <div class="input-icon"><i class="fa-solid fa-lock"></i></div>
-                    <input type="password" name="password" placeholder="Choose Password" id="password" required>
+                    <input type="password" id="password" placeholder="Choose Password" required>
                 </div>
 
                 <!--Confirm password input-->
                 <div class="input-container">
                     <div class="input-icon"><i class="fa-solid fa-lock"></i></div>
-                    <input type="password" name="password" placeholder="Confirm Password" id="comfirmPassword" required>
+                    <input type="password" id="comfirmPassword" placeholder="Confirm Password" required>
                 </div>
 
-                <button type="submit" id="login-btn">SIGN UP</button>
+                <button type="submit" id="sign-up-btn">SIGN UP</button>
 
                 <div id="or">
                     <div class="hr"></div> <!--Horizental line-->
@@ -73,10 +70,9 @@
 
     </div>
     
-
+    <script src="scripts/signup.js"></script>
 </body>
 </html>
 
 <!--Font awsome-->
 <script src="https://kit.fontawesome.com/559b0c66a2.js" crossorigin="anonymous"></script>
-<script src="./signup.js"></script>

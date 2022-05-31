@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Add Restaurant</title>
 </head>
 <body id="create-body">
-    
+    <form action="restaurantpic.php" method="post" enctype="multipart/form-data">
     <div id="create-container">
 
         <div id="create-header">
@@ -19,13 +20,13 @@
 
             <div class="form-section" id="form-restaurant-photo">
                 <h2><label for="img">Choose photo</label></h2>
-                <input type="file" name="photo" accept="image/*">
+                <input type="file" name="file">
             </div>
             
             <div class="form-section">
                 <h2>Name and Description</h2>
                 <div>
-                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" id="name" placeholder="Name">
                     <textarea name="description"cols="30" rows="5" placeholder="Description"></textarea>
                 </div>
             </div>
@@ -34,35 +35,35 @@
                 <h2>Cuisines</h2>
                 <div id="create-cuisines">
                     <div>
-                        <input type="checkbox" id="Lebanese" name="Lebanese" value="Lebanese">
+                        <input type="checkbox" id="Lebanese" name="Lebanese" value="Lebanese" class="messageCheckbox">
                         <label for="Lebanese">Lebanese</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="American" name="American" value="American">
+                        <input type="checkbox" id="American" name="American" value="American" class="messageCheckbox">
                         <label for="American">American</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Greek" name="Greek" value="Greek">
+                        <input type="checkbox" id="Greek" name="Greek" value="Greek" class="messageCheckbox">
                         <label for="Greek">Greek</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Chinese" name="Chinese" value="Chinese">
+                        <input type="checkbox" id="Chinese" name="Chinese" value="Chinese" class="messageCheckbox">
                         <label for="Chinese">Chinese</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="French" name="French" value="French">
+                        <input type="checkbox" id="French" name="French" value="French" class="messageCheckbox">
                         <label for="French">French</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Asian" name="Asian" value="Asian">
+                        <input type="checkbox" id="Asian" name="Asian" value="Asian" class="messageCheckbox">
                         <label for="Asian">Asian</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Japanese" name="Japanese" value="Japanese">
+                        <input type="checkbox" id="Japanese" name="Japanese" value="Japanese" class="messageCheckbox">
                         <label for="Japanese">Japanese</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Indian" name="Indian" value="Indian">
+                        <input type="checkbox" id="Indian" name="Indian" value="Indian" class="messageCheckbox"> 
                         <label for="Indian">Indian</label>
                     </div>
                     
@@ -74,8 +75,8 @@
             <div class="form-section">
                 <h2>Contact Information</h2>
                 <div>
-                    <input type="text" name="phone" placeholder="Phone ex: +961 78123456">
-                    <input type="email" name="email" placeholder="Email ex: foodity@gmail.com">
+                    <input type="text" id="phone" placeholder="Phone ex: +961 78123456">
+                    <input type="email" id="email" placeholder="Email ex: foodity@gmail.com">
                     <select name="location" id="location">
                         <option value="Beirut">Beirut</option>
                         <option value="Batroun">Batroun</option>
@@ -96,7 +97,8 @@
         <button id="create-restaurant-btn">Create Restaurant</button>
 
     </div>
-
+</form>
+<script src="scripts/restaurantpic.js"></script>
 </body>
 </html>
 
