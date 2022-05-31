@@ -39,6 +39,7 @@ let resto_name = document.getElementById('restaurant_id')
 let resto_desc = document.getElementById('description')
 let phone = document.getElementById('phone')
 let resto_location = document.getElementById('location')
+let resto_photo = document.getElementById('resto-photo')
 
 let url = 'http://foodity/backend/restaurant.php'
 url += "?resto_id=" + resto_id;
@@ -52,6 +53,7 @@ axios({
         resto_desc.innerHTML = response.data[0].description
         phone.innerHTML = response.data[0].phone
         resto_location.innerHTML = response.data[0].location
+        resto_photo.src = response.data[0].icon
     });
 
 //print restaurant reviews
