@@ -71,3 +71,32 @@ axios({
                     reviewlist.innerHTML += '<li><div class="review-header"><div class="review-header-left"><img src="https://media.npr.org/assets/img/2022/04/18/gettyimages-1239860186-cc4ab75dba7fd565b66a36d4112c2e7a4209160d.jpg"><span>'+Response.data[i].username+'</span></div><span>5<i class="fa-solid fa-star"></i></span></div><div class="review-body">'+Response.data[i].review+'</div></li>'
             }
     })
+
+//------DELETE RESTAURANT------
+let delete_btn = document.getElementById('delete-restaurant')
+console.log(delete_btn)
+delete_btn.addEventListener('click', () => {
+
+});
+
+//----------ADD REVIEW-------
+let submit_btn = document.getElementById('submit-review')
+
+submit_btn.addEventListener('click', () => {
+        
+        let user_id = localStorage.getItem('user_id')
+        let resto_id = localStorage.getItem('resto_id')
+        let review = document.getElementById('user-review-input').value
+        let url = 'http://foodity/backend/comment.php'
+        url += "?user_id=" + user_id;
+        url += "&?resto_id=" + resto_id;
+        url += "&?review=" + review 
+
+        axios({
+                method: 'GET',
+                url: url
+            }).then((Response) => {
+                    console.log(Response)
+            })
+
+})
