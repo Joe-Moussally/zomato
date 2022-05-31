@@ -1,14 +1,20 @@
 <?php
 
 include("connection.php");
-$name=$_GET["name"];
-$description=$_GET["description"];
-$icon=$_GET["icon"];
-$phone=$_GET["phone"];
-$location=$_GET["location"];
-$cuisines= $_GET["cuisines"];
 
+$name=$_POST["name"];
+$description=$_POST["description"];
+$phone=$_POST["phone"];
+$location=$_POST["location"];
+$cuisines= $_POST["cuisines"];
+$icon = $_FILES['icon'];
 $cuisines = explode(",", $cuisines);
+
+$iconLink = "";
+if($icon['size'] > 0){
+    $iconLink = "images/restaurants/".$icon['name'];
+    move_uploaded_file($icon['tmp_name'], $iconLink);
+}
 
 $sql = "SELECT * FROM restaurants WHERE name = ?";
 $stmt = $mysqli->prepare($sql);
@@ -21,7 +27,7 @@ if($result->num_rows > 0){
 else{
     $sql = "INSERT INTO restaurants (name, description, icon, phone, location) VALUES (?, ?, ?, ?, ?)";
     $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param("sssss", $name, $description, $icon, $phone, $location);
+    $stmt->bind_param("sssss", $name, $description, $iconLink, $phone, $location);
     $stmt->execute();
     $id = $stmt->insert_id;
     foreach($cuisines as $cuisine){
