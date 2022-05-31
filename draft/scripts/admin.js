@@ -8,7 +8,6 @@ const comments = document.getElementById("comments");
             restaurants : restaurants.textContent,
             comments :comments.textContent,
         }
-        debugger;
         let url = './foodity/backend/statistics.php';
         axios({
             method: 'GET',
