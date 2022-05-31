@@ -17,13 +17,10 @@ axios({
 });
 
 const redirect = (li) => {
-    console.log("redirected")
-    
+   
+ 
     let url2 = 'http://foodity/backend/restaurant.php';
     url2 += '?resto_id='+li.id;
-    console.log(li.id)
     localStorage.setItem('resto_id',li.id);
-    console.log(li)
-    
     window.location.replace('http://foodity/draft/restaurant.html');
 }
