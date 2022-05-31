@@ -50,6 +50,7 @@ i {
     display: flex;
     /* height: 100vh; */
     align-items: center;
+    flex-direction: column;
 }
 
 .login-logo {

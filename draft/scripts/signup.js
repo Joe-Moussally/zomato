@@ -4,7 +4,7 @@ document.getElementById("sign-up-btn").addEventListener("click", function (event
         const username = document.getElementById("username").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
-
+        debugger
         let data = {
             username,
             email,

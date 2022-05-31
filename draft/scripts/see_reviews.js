@@ -1,9 +1,8 @@
-let url = 'http://foodity/backend/admincomments.php';
-let ul = $('#see-reviews-container').children('ul')[0];
+window.onload = ()=>{
+    let url = 'http://foodity/backend/admincomments.php';
+let ul = document.getElementById('admin-reviews-list');
 
-console.log(ul);
-
-
+console.log(ul)
 axios({
     method: 'GET',
     url: url
@@ -15,3 +14,4 @@ axios({
 
     console.log(response.data)
 })
+}

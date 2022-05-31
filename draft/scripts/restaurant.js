@@ -96,7 +96,7 @@ submit_btn.addEventListener('click', () => {
                 method: 'GET',
                 url: url
             }).then((Response) => {
-                    console.log(Response)
+                    console.log(Response['response'])
             })
 
 })
