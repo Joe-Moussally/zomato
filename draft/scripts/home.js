@@ -1,5 +1,8 @@
 let url = 'http://foodity/backend/restaurants.php';
-let ul = $('#near-you-list').children('ul')[0];
+let list = document.getElementsByClassName('admin-reviews-list')[0];
+
+console.log(JSON.stringify(list))
+
 axios({
     method: 'GET',
     url: url
@@ -8,7 +11,7 @@ axios({
     console.log(Response.data)
     for (i=0; i<Response.data.length;i++) {
 
-        ul.innerHTML += '<li onclick="redirect(event.currentTarget)" id="'+Response.data[i].id+'"><img src="'+Response.data[i].icon+'"><div class="card-body"><div class="card-header"><h2>'+Response.data[i].name+'</h2><span><i class="fa-solid fa-star"></i>4</span></div><span><i class="fa-solid fa-location-dot"></i>'+Response.data[i].location+'</span></div></li>'
+        list.innerHTML += '<li onclick="redirect(event.currentTarget)" id="'+Response.data[i].id+'"><img src="'+Response.data[i].icon+'"><div class="card-body"><div class="card-header"><h2>'+Response.data[i].name+'</h2><span><i class="fa-solid fa-star"></i>4</span></div><span><i class="fa-solid fa-location-dot"></i>'+Response.data[i].location+'</span></div></li>'
         
     }
 });
