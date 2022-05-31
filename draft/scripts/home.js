@@ -23,3 +23,14 @@ const redirect = (li) => {
     localStorage.setItem('resto_id',li.id);
     window.location.replace('http://foodity/draft/restaurant.html');
 }
+
+//adding search for home searchbar
+
+let searchbar = document.getElementById('header-search')
+
+searchbar.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        let name = searchbar.value;
+        
+    }
+});
