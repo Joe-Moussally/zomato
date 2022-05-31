@@ -1,16 +1,27 @@
-<?php 
-    include 'link.php';
-    session_start();
+<?php
+include("connection.php");
+$username = $_GET['username'];
+$email = $_GET["email"];
+$password = hash("sha256", $_GET["password"]);
 
-	$username = $_POST["name"];
-	$email= $_POST["email"];
-    $password = $_POST["password"];
-    $phone = $_POST["phone"];
-    $admin = 0;
+$query = $mysqli->prepare("Select id from users where username = ? OR email = ?");
+$query->bind_param("ss",$username, $email);
+$query->execute();
+$query->store_result();
+$num_rows = $query->num_rows;
+$query->fetch();
+$response = [];
 
-    $query = "insert into users(username, email, password, phone, admin) values ('$username','$email','$password','$phone','$admin')";
-    $result = mysqli_query($dbhandle, $query) or die(mysqli_error($dbhandle)); 
+if($num_rows == 1){
+    echo "used";
+}else{
+    $query = $mysqli->prepare("INSERT INTO users (username, password, email) VALUES (?, ?, ?)");
+    $query->bind_param("sss",$username, $password, $email);
+    $query->execute();
+    $query = $mysqli->prepare("INSERT INTO roles (username, password, email) VALUES (?, ?, ?)");
+    $query->bind_param("sss",$username, $password, $email);
+    $query->execute();
+    echo  "ok";  
+}
 
-    $_SESSION["username"] = $username;
-	//header("location:???.php");
-?>		
+?>

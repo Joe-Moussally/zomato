@@ -1,22 +1,24 @@
-<?php 
-    include 'link.php';
-    session_start();
 
-	$username = $_POST["username"];
-    $password = $_POST["password"];
-   
-    $query="SELECT * FROM users WHERE username='$username' and password='$password'";
-    $result=mysqli_query($dbhandle, $query);
-    $resultuser=mysqli_num_rows($result);
-    
-    //to be used if pass is wrong at the front end
-    if($resultuser<1){
-        header("location:index.php?wrongpass=1");
-            
-    }else{
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION["username"] = $username;
-        $_SESSION["role"] = $row["role"];
-        //to add profile pic later?
-    }
+<?php
+include("connection.php");
+$email = $_GET["email"];
+$password = hash("sha256", $_GET["password"]);
+$query = $mysqli->prepare("Select id,role from users INNER JOIN roles on users.id=roles.user_id where email = ? AND password = ?");
+$query->bind_param("ss", $email, $password);
+$query->execute();
+$query->store_result();
+$num_rows = $query->num_rows;
+$query->bind_result($id,$role);
+$query->fetch();
+$response = [];
+
+if($num_rows == 0){
+    $response["response"] = "User Not Found";
+}else{
+    $response["response"] = "Logged in";
+    $response["user_id"] = $id;
+    $response["role"] = $role;
+}
+
+echo json_encode($response);
 ?>
