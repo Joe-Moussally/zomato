@@ -2,9 +2,9 @@
 include("connection.php");
 
 $users_id = $_GET["users_id"];
-$restaurants_id = $_GET["restaurants_id"];
+$restaurants_id = $_GET["resto_id"];
 $review = $_GET["review"];
-$rating = $_GET["rating"];
+//$rating = $_GET["rating"];
 
 $query = $mysqli->prepare("Select id from comments where users_id = ? AND restaurants_id = ?");
 $query->bind_param("ss",$users_id, $restaurants_id);
