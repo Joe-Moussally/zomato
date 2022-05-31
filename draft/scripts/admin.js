@@ -9,7 +9,7 @@ const comments = document.getElementById("comments");
             comments :comments.value,
         }
 
-        let url = 'http://localhost/zomato/backend/statistics.php';
+        let url = 'http://foodity/backend/backend/statistics.php';
         axios({
             method: 'GET',
             url: url,

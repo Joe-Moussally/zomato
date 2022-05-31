@@ -20,7 +20,7 @@ document.getElementById("create-restaurant-btn").addEventListener("click", funct
             cuisines
         }
         debugger
-        let url = 'http://localhost/zomato/backend/add.php';
+        let url = 'http://foodity/backend/backend/add.php';
         axios({
             method: 'POST',
             url: url,

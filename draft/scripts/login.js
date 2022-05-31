@@ -7,7 +7,7 @@ document.getElementById("login-btn").addEventListener("click", function (event) 
         email,
         password
     }
-    let url = 'http://localhost/zomato/backend/login.php';
+    let url = 'http://foodity/backend/backend/login.php';
     debugger
     axios({
         method: 'POST',
@@ -21,7 +21,7 @@ document.getElementById("login-btn").addEventListener("click", function (event) 
             let id = result.user_id;
             window.localStorage.setItem('user_id', id);
             window.localStorage.setItem('role', role);
-            window.location.href = "http://localhost/zomato/draft/profile.html";
+            window.location.href = "http://foodity/backend/draft/profile.html";
 
         });
 });

@@ -11,7 +11,7 @@ document.getElementById("sign-up-btn").addEventListener("click", function (event
             password
         }
 
-        let url = 'http://localhost/zomato/backend/signup.php';
+        let url = 'http://foodity/backend/backend/signup.php';
         axios({
             method: 'POST',
             url: url,
@@ -19,7 +19,7 @@ document.getElementById("sign-up-btn").addEventListener("click", function (event
         })
             .then(function (response) {
                 if (response.data === 'ok') {
-                    window.location.href = "http://localhost/zomato/draft/login.html";
+                    window.location.href = "http://foodity/backend/draft/login.html";
                 }
             });
     }
